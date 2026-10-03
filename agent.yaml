@@ -1,26 +1,30 @@
 spec_version: "0.1.0"
-name: "cross-border-data-transfer-tia-validator"
-version: "1.0.0"
-category: "legal"
+name: cross-border-data-transfer-tia-validator
+version: 1.0.0
+description: Generates GDPR Article 46 Transfer Impact Assessments (TIAs) evaluating destination country surveillance laws and supplementary encryption controls.
 author: "Rucha Salpure"
-description: "Generates GDPR Article 46 Transfer Impact Assessments (TIAs) evaluating destination country surveillance laws and supplementary encryption controls"
-capabilities:
-  - "gdpr-transfer-impact-assessment"
-  - "autonomous-decision-making"
-  - "explainable-auditing"
-  - "multi-agent-collaboration"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
 skills:
-  - "gdpr-transfer-impact-assessment"
-tools:
-  - "python_executor"
-  - "audit_logger"
-  - "schema_validator"
+  - gdpr-transfer-impact-assessment
+tools: []
+delegation:
+  mode: auto
 runtime:
-  environment: "python3.11"
-  memory_limit: "4GB"
-  timeout_seconds: 300
-governance:
-  audit_logging: true
-  human_in_the_loop: false
-  maker_checker: true
-  explainability_required: true
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - legal
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/ruchasalpure/cross-border-data-transfer-tia-validator"

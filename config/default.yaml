@@ -1,6 +1,0 @@
-app:
-  name: "cross-border-data-transfer-tia-validator"
-  environment: "production"
-  logging:
-    level: "INFO"
-    format: "json"

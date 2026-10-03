@@ -1,0 +1,10 @@
+{
+  "name": "cross-border-data-transfer-tia-validator",
+  "instructions": "You are Cross Border Data Transfer Tia Validator. Provide structured, verified responses.",
+  "tools": [
+    {
+      "type": "code_interpreter"
+    }
+  ],
+  "model": "gpt-4o"
+}
